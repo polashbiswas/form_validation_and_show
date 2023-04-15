@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>New Employe</h3>
+        <form class="form_container" id="formId">
+            <div class="col_input">
+                <label for="name">Enter Name</label>
+                <br>
+                <input type="text" id="name">
+            </div>
+            <div class="col_input">
+                <label for="profession">Enter Profession</label>
+                <br>
+                <input type="text" id="profession">
+            </div>
+            <div class="col_input">
+                <label for="age">Enter age</label>
+                <br>
+                <input type="text" id="age">
+            </div>
+        </form>
+        <button class="btn" id="btn_id">Add User</button>
+        <p id="message" class="msg"></p>
+        <p class="addedEmplyHeading">Added Employees</p>
+        <div class="employeePlace" id="employe-list"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
