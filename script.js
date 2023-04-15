@@ -25,6 +25,11 @@ function addToList(name, profession, age) {
     // localStorage.setItem('employees', JSON.stringify(employees));
     //console.log(employees);
     let employeList = document.getElementById("employe-list");
+    const mess = document.querySelector('#employe-list > p');
+    console.log(mess)
+    if (mess) {
+      mess.remove();
+    } 
     let empDetailsDivTag = document.createElement("div");
     empDetailsDivTag.setAttribute("class", "outerDiv");
     const deleteButton = document.createElement("button");
