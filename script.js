@@ -36,10 +36,10 @@ function addToList(name, profession, age) {
     deleteButton.innerHTML = "Delete";
     deleteButton.setAttribute("class", "dlt");
     // empDetailsDivTag.setAttribute("class", "listDiv")
-    empDetailsDivTag.innerHTML = `  <p class = "inputList"><span>${employeeDetails.id}.</span>
-                                    <span>Name:${employeeDetails.name} </span>
-                                    <span>Profession:${employeeDetails.profession} </span>
-                                    <span>Age:${employeeDetails.age}</span></p>`;
+    empDetailsDivTag.innerHTML = `  <p class = "inputList"><span>${employeeDetails.id} .</span>
+                                    <span>Name : ${employeeDetails.name} </span>
+                                    <span>Profession : ${employeeDetails.profession} </span>
+                                    <span>Age : ${employeeDetails.age}</span></p>`;
     //console.log(empDetailsDivTag.innerHTML);
     empDetailsDivTag.appendChild(deleteButton);
     employeList.appendChild(empDetailsDivTag);
