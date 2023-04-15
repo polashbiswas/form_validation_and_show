@@ -19,12 +19,14 @@ function addToList(name, profession, age) {
         message.style.color = "red";
         return;
     }
-
+   
     let employeeDetails = { id: nextId++, name, profession, age };
     employees.push(employeeDetails);
+    // localStorage.setItem('employees', JSON.stringify(employees));
     //console.log(employees);
     let employeList = document.getElementById("employe-list");
     let empDetailsDivTag = document.createElement("div");
+    empDetailsDivTag.setAttribute("class", "outerDiv");
     const deleteButton = document.createElement("button");
     deleteButton.innerHTML = "Delete";
     deleteButton.setAttribute("class", "dlt");
